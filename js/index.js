@@ -48,13 +48,10 @@ class Carousel {
 class CurrentImg {
   constructor(image) {
       this.image = image;
-      this.val = this.image.dataset.image;
-      this.slide = document.querySelector(`div[data-image="${this.val}"`);
   }
   show() {
       this.image.style.display = 'block';
       this.image.classList.add('fadeIn');
-
   }
   hide() {
       this.image.style.display = 'none';
