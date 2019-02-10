@@ -27,6 +27,7 @@
     top: 50%; 
     left: 25px;
     transform: translate(0, -50%);
+    z-index: 10;
   }
   .right-button {
     top: 50%; 
@@ -37,4 +38,16 @@
     .width-100();
     border-radius: 50%;
   }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
 }

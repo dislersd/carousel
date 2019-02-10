@@ -53,6 +53,8 @@ class CurrentImg {
   }
   show() {
       this.image.style.display = 'block';
+      this.image.classList.add('fadeIn');
+
   }
   hide() {
       this.image.style.display = 'none';
