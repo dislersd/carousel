@@ -61,15 +61,9 @@
 }
 .carousel img {
   width: 100%;
-  border-radius: 50%;
 }
 .fadeIn {
   animation-name: fadeIn;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
-.fadeOut {
-  animation-name: fadeOut;
-  animation-duration: 5s;
+  animation-duration: 0.2s;
   animation-fill-mode: forwards;
 }

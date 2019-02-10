@@ -24,7 +24,7 @@ class Carousel {
           }
       });
       this.imgArray[this.index].show();
-      console.log(this.index);
+      TweenMax.fromTo("img", 0.5, {x:900}, {x:0, ease:Back.easeOut}, );
   }
   goRight() {
       this.img[this.index].style.display = 'none';
@@ -40,7 +40,7 @@ class Carousel {
           }
       });
       this.imgArray[this.index].show();
-      console.log(this.index);
+      TweenMax.fromTo("img", 0.5, {x:-900}, {x:0, ease:Back.easeOut}, );
   }
 }
 
