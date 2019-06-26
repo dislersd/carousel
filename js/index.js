@@ -17,6 +17,7 @@ class Carousel {
       } else {
           this.index--;
       }
+      
       this.img[this.index].style.display = 'block';
       this.imgArray.forEach( (img, index) => {
           if (index !== this.index) {
