@@ -7,46 +7,45 @@ class Carousel {
       this.index = 0;
       this.rightButton.addEventListener('click', () => this.goRight());
       this.leftButton.addEventListener('click', () => this.goLeft());
-      this.imgArray = Array.from(this.img).map( img => new CurrentImg(img));
+      this.imgArray = Array.from(this.img).map( img => new CarouselImg(img));
   }
 
   goLeft() {
-      this.img[this.index].style.display = 'none';
       if (this.index === 0) {
           this.index = this.img.length - 1;
       } else {
           this.index--;
       }
       
-      this.img[this.index].style.display = 'block';
       this.imgArray.forEach( (img, index) => {
           if (index !== this.index) {
               img.hide();
           }
       });
+    
       this.imgArray[this.index].show();
       TweenMax.fromTo("img", 0.5, {x:900}, {x:0, ease:Back.easeOut}, );
   }
   goRight() {
-      this.img[this.index].style.display = 'none';
       if (this.index < this.img.length - 1) {
           this.index ++;
       } else {
           this.index = 0;
       }
-      this.img[this.index].style.display = 'block';
+
       this.imgArray.forEach((img, index) => {
           if (index !== this.index) {
               img.hide();
           }
       });
+    
       this.imgArray[this.index].show();
       TweenMax.fromTo("img", 0.5, {x:-900}, {x:0, ease:Back.easeOut}, );
   }
 }
 
 
-class CurrentImg {
+class CarouselImg {
   constructor(image) {
       this.image = image;
   }
