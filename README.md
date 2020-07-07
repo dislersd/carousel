@@ -61,7 +61,7 @@ class Carousel {
   <div class="right-button"> </div>
 </div>
 ```
-- CurrentImg class that will take in the images from the carousel
+- CarouselImg class that will take in the images from the carousel and add hide()/show() methods to them
 ```javascript
 class CarouselImg {
   constructor(image) {
