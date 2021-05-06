@@ -1,7 +1,7 @@
 # carousel
 An img carousel built with vanilla js
 <br>
-preview [here](https://htmlpreview.github.io/?https://github.com/dislersd/carousel/blob/master/index.html)
+preview [here](https://carouselll.netlify.app/)
 
 - Creating a "Carousel" class that will take a carousel element as an arg in the constructor
 ```javascript
